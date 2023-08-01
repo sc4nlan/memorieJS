@@ -1,0 +1,26 @@
+{
+  "id1": {
+    "nome": "João",
+    "sobrenome": "Silva",
+    "telefone": "123456789",
+    "email": "joao.silva@example.com"
+  },
+  "id2": {
+    "nome": "Maria",
+    "sobrenome": "Souza",
+    "telefone": "987654321",
+    "email": "maria.souza@example.com"
+  },
+  "id3": {
+    "nome": "Pedro",
+    "sobrenome": "Fernandes",
+    "telefone": "555555555",
+    "email": "pedro.fernandes@example.com"
+  },
+  "id4": {
+    "nome": "Ana",
+    "sobrenome": "Gomes",
+    "telefone": "999999999",
+    "email": "ana.gomes@example.com"
+  }
+}

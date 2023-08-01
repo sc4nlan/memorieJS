@@ -1,0 +1,1 @@
+utilizado useForm para validação de dados em formularios, instalação do react-hook-form
