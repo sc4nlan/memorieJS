@@ -1,0 +1,4 @@
+NewResearch:
+    Sempre que há uma modificação de conteúdo, ele já é enviado para o objeto, sem a necessidade de enviar,
+    porém enviar verifica os dados (faltantes, incorretos) e impede que faça o envio efetivamente para o
+    proximo passo.
