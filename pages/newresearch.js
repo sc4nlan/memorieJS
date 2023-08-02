@@ -15,7 +15,7 @@ export default function NewResearch(){
         biografia: '',
         pass1: '',
         pass2: '',
-        type: [],
+        type: '',
         status: ''
       });
 
@@ -25,9 +25,16 @@ export default function NewResearch(){
         {id:3, name:"Bloqueado"},
         {id:4, name:"Excluido"}
     ]
+
+    let checks = [
+        {id:1, name:"Gestor"},
+        {id:2, name:"Admin"},
+        {id:3, name:"Pesquisador"},
+        {id:4, name:"Padrão"},
+    ]
     
     const submit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
 
         if (e.target.pass1.value != e.target.pass2.value){
             alert("Senhas diferentes")
@@ -39,12 +46,15 @@ export default function NewResearch(){
     }
 
     function handleChange(e){
-        console.log()
         setFormData({...formData, [e.target.name]: e.target.value});
     }
 
-    function handleCategory(e){
-        console.log(e);
+    function handleStatus(e){
+        console.log("a");
+    }
+
+    function handleType(e){
+        console.log(e.target.value);
     }
 
     return(
@@ -73,17 +83,22 @@ export default function NewResearch(){
                         handleOnChange={handleChange}
                     />
 
-                    <Checkbox name="type" text="tipo"/>
+                    <Checkbox
+                        name="type" 
+                        text="tipo"
+                        checks={checks}
+                        handleOnChange={handleChange}
+                    />
 
                     <Input name="linkedin" type="url" placeholder="Ex: https://www.linkedin.com/usuario" handleOnChange={handleChange}         
                     />
 
                     <Input name="lattes" type="url" placeholder="Ex: https://www.lattes.com.br/usuario" handleOnChange={handleChange}/>
                     
-                    <Select
+                    <Select /* Selecionar  Ativo, inativo, etc*/
                         name="status"
                         options={options}
-                        handleOnChange={handleCategory}
+                        handleOnChange={handleStatus}
                     />
 
                 </div>
