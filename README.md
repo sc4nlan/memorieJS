@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## NOTA: PROJETO MIGRADO PARA GITLAB DURANTE PRODUÇÃO, DESCONTINUADO NO GITHUB, APÓS FINALIZADO FAREI O PUSH NESTE REPOSITÓRIO
 
 ## Getting Started
 
